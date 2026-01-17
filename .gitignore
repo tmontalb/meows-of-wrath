@@ -1,0 +1,21 @@
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+
+# VS / VS Code
+.vs/
+.vscode/
+.idea/
+
+# Unity generated files
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+*.meta
+
+# Misc
+*.log
