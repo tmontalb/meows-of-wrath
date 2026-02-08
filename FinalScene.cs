@@ -71,21 +71,21 @@ public class FinalScene : MonoBehaviour
 
     void Activate()
     {
-        if (index == 0)
-        {
-            string url = "https://docs.google.com/spreadsheets/d/1XQPnTE0Kz9YPMMGjbL6x0pqXLszUxoB87j4dDcrXl_I/edit?usp=sharing";
-            Application.OpenURL(url);
-        }
-        else if (index == 1)
-        {
+        // if (index == 0)
+        // {
+        //     string url = "https://docs.google.com/spreadsheets/d/1XQPnTE0Kz9YPMMGjbL6x0pqXLszUxoB87j4dDcrXl_I/edit?usp=sharing";
+        //     Application.OpenURL(url);
+        // }
+        // else if (index == 1)
+        // {
             SceneManager.LoadScene(mainMenuSceneName);
-        }
-        else if (index == 2)
-        {
-            Application.Quit();
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#endif
-        }
+//         }
+//         else if (index == 2)
+//         {
+//             Application.Quit();
+// #if UNITY_EDITOR
+//             UnityEditor.EditorApplication.isPlaying = false;
+// #endif
+//         }
     }
 }

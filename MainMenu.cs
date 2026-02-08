@@ -65,13 +65,21 @@ public class MainMenu : MonoBehaviour
 
                 SceneManager.LoadScene(gameplaySceneName);
                 break;
-            case 1: // Restart
-#if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-#else
-                Application.Quit();
-#endif
-                break;
+            // case 1: // Restart
+// this sequence was there if we wanted to have a quit button, under the condition that we are in a windows executable build, with webgl build, should reset the game, but this does nto work, so we are removing this button, and replaced it with the online form access.
+// WebGL: you can't quit, so reload the menu scene (fresh menu)
+// #if UNITY_WEBGL && !UNITY_EDITOR
+//     Time.timeScale = 1f;
+//     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+// #elif UNITY_EDITOR
+//                 UnityEditor.EditorApplication.isPlaying = false;
+// #else
+//                 Application.Quit();
+// #endif
+                // string url = "https://docs.google.com/spreadsheets/d/1XQPnTE0Kz9YPMMGjbL6x0pqXLszUxoB87j4dDcrXl_I/edit?usp=sharing";
+                // // Application.OpenURL(url);
+                // OpenURLHelper.Open(url);
+                // break;
         }
     }
 

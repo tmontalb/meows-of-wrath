@@ -170,13 +170,16 @@ public class PauseMenu : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
 
-            case 2:
-#if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-#else
-                Application.Quit();
-#endif
-                break;
+//             case 2:
+// // this sequence was there if we wanted to have a quit button. I replaced it with the online form access.
+// // #if UNITY_EDITOR
+// //                 UnityEditor.EditorApplication.isPlaying = false;
+// // #else
+// //                 Application.Quit();
+// // #endif
+//                 string url = "https://docs.google.com/spreadsheets/d/1XQPnTE0Kz9YPMMGjbL6x0pqXLszUxoB87j4dDcrXl_I/edit?usp=sharing";
+//                 Application.OpenURL(url);
+//                 break;
         }
     }
 }
